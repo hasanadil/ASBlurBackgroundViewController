@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^ASBlurBackgroundCompletion)();
-
 @interface ASBlurBackgroundViewController : UIViewController
 
-@property (nonatomic, copy) ASBlurBackgroundCompletion blurCompletion;
+-(void) blurView:(UIView*)backgroundView withCompletion:(void (^)())completion;
 
 @end

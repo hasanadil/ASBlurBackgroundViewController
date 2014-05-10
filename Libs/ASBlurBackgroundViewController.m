@@ -27,34 +27,17 @@
     return self;    
 }
 
--(id) initWithCoder:(NSCoder *)aDecoder
+-(void) blurView:(UIView*)backgroundView withCompletion:(void (^)())completion
 {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        _bgQueue = [[NSOperationQueue alloc] init];
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-    UIViewController* backgroundController = [self parentViewController];
-    if (!backgroundController) {
-        backgroundController = self;
-    }
-    UIView* backgroundView = [backgroundController view];
     CGRect backgroundViewBounds = [backgroundView bounds];
     UIImage* backgroundViewImage = [self imageFromView:backgroundView];
+    CIImage* backgroundViewCIImage = [CIImage imageWithCGImage:backgroundViewImage.CGImage];
     
     __weak typeof(self) me = self;
     [self.bgQueue addOperationWithBlock:^{
         
-        CIImage* backgroudnViewCIImage = [CIImage imageWithCGImage:backgroundViewImage.CGImage];
-        
         CIFilter* blurFilter = [CIFilter filterWithName:@"CIGaussianBlur"];
-        [blurFilter setValue:backgroudnViewCIImage forKey:kCIInputImageKey];
+        [blurFilter setValue:backgroundViewCIImage forKey:kCIInputImageKey];
         [blurFilter setValue:[NSNumber numberWithFloat:5.0f] forKey:@"inputRadius"];
         CIImage* blurResult = [blurFilter valueForKey:kCIOutputImageKey];
         
@@ -62,21 +45,22 @@
         CGImageRef backgroundViewBlurImageRef = [context createCGImage:blurResult fromRect:backgroundViewBounds];
         UIImage* backgroundViewBlurImage = [[UIImage alloc] initWithCGImage:backgroundViewBlurImageRef];
         
+        
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             
-            UIImageView* screenBlurImageView = [[UIImageView alloc] initWithImage:backgroundViewBlurImage];
-            [screenBlurImageView setFrame:CGRectMake(0, 0, backgroundViewBounds.size.width, backgroundViewBounds.size.height)];
-            [[screenBlurImageView layer] setOpacity:0];
+            UIImageView* blurImageView = [[UIImageView alloc] initWithImage:backgroundViewBlurImage];
+            [blurImageView setFrame:CGRectMake(0, 0, backgroundViewBounds.size.width, backgroundViewBounds.size.height)];
+            [[blurImageView layer] setOpacity:0];
             
-            [me.view addSubview:screenBlurImageView];
-            [me.view sendSubviewToBack:screenBlurImageView];
+            [me.view addSubview:blurImageView];
+            [me.view sendSubviewToBack:blurImageView];
             
             [UIView animateWithDuration:0.25f animations:^(void){
-                [[screenBlurImageView layer] setOpacity:1];
+                 [[blurImageView layer] setOpacity:1];
             }];
             
-            if (_blurCompletion) {
-                _blurCompletion();
+            if (completion) {
+                completion();
             }
         }];
     }];

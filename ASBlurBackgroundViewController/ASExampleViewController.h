@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASBlurBackgroundViewController.h"
 
-@interface ASExampleViewController : UIViewController
+@interface ASExampleViewController : ASBlurBackgroundViewController
 
 @end

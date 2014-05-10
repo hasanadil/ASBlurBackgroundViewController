@@ -13,14 +13,15 @@
 		9F6E1B13191E88D200FB192C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6E1B11191E88D200FB192C /* InfoPlist.strings */; };
 		9F6E1B15191E88D200FB192C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E1B14191E88D200FB192C /* main.m */; };
 		9F6E1B19191E88D200FB192C /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E1B18191E88D200FB192C /* ASAppDelegate.m */; };
-		9F6E1B1C191E88D200FB192C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6E1B1A191E88D200FB192C /* Main.storyboard */; };
-		9F6E1B1F191E88D200FB192C /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E1B1E191E88D200FB192C /* ASViewController.m */; };
 		9F6E1B21191E88D200FB192C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6E1B20191E88D200FB192C /* Images.xcassets */; };
 		9F6E1B28191E88D200FB192C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E1B27191E88D200FB192C /* XCTest.framework */; };
 		9F6E1B29191E88D200FB192C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E1B08191E88D200FB192C /* Foundation.framework */; };
 		9F6E1B2A191E88D200FB192C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E1B0C191E88D200FB192C /* UIKit.framework */; };
 		9F6E1B32191E88D200FB192C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6E1B30191E88D200FB192C /* InfoPlist.strings */; };
 		9F6E1B34191E88D200FB192C /* ASBlurBackgroundViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E1B33191E88D200FB192C /* ASBlurBackgroundViewControllerTests.m */; };
+		9F6E1B40191E898100FB192C /* ASExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E1B3E191E898100FB192C /* ASExampleViewController.m */; };
+		9F6E1B41191E898100FB192C /* ASExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6E1B3F191E898100FB192C /* ASExampleViewController.xib */; };
+		9F6E1B45191E8BBC00FB192C /* ASBlurBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E1B44191E8BBC00FB192C /* ASBlurBackgroundViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +45,19 @@
 		9F6E1B16191E88D200FB192C /* ASBlurBackgroundViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASBlurBackgroundViewController-Prefix.pch"; sourceTree = "<group>"; };
 		9F6E1B17191E88D200FB192C /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
 		9F6E1B18191E88D200FB192C /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
-		9F6E1B1B191E88D200FB192C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9F6E1B1D191E88D200FB192C /* ASViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASViewController.h; sourceTree = "<group>"; };
-		9F6E1B1E191E88D200FB192C /* ASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASViewController.m; sourceTree = "<group>"; };
 		9F6E1B20191E88D200FB192C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9F6E1B26191E88D200FB192C /* ASBlurBackgroundViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASBlurBackgroundViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6E1B27191E88D200FB192C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9F6E1B2F191E88D200FB192C /* ASBlurBackgroundViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASBlurBackgroundViewControllerTests-Info.plist"; sourceTree = "<group>"; };
 		9F6E1B31191E88D200FB192C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9F6E1B33191E88D200FB192C /* ASBlurBackgroundViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBlurBackgroundViewControllerTests.m; sourceTree = "<group>"; };
+		9F6E1B3D191E898100FB192C /* ASExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASExampleViewController.h; sourceTree = "<group>"; };
+		9F6E1B3E191E898100FB192C /* ASExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASExampleViewController.m; sourceTree = "<group>"; };
+		9F6E1B3F191E898100FB192C /* ASExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASExampleViewController.xib; sourceTree = "<group>"; };
+		9F6E1B43191E8BBC00FB192C /* ASBlurBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASBlurBackgroundViewController.h; sourceTree = "<group>"; };
+		9F6E1B44191E8BBC00FB192C /* ASBlurBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBlurBackgroundViewController.m; sourceTree = "<group>"; };
+		9F6E1B46191E93DB00FB192C /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9F6E1B49191E945E00FB192C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +87,8 @@
 		9F6E1AFC191E88D200FB192C = {
 			isa = PBXGroup;
 			children = (
-				9F6E1B0E191E88D200FB192C /* ASBlurBackgroundViewController */,
+				9F6E1B42191E8BBC00FB192C /* Libs */,
+				9F6E1B0E191E88D200FB192C /* Example */,
 				9F6E1B2D191E88D200FB192C /* ASBlurBackgroundViewControllerTests */,
 				9F6E1B07191E88D200FB192C /* Frameworks */,
 				9F6E1B06191E88D200FB192C /* Products */,
@@ -101,6 +107,8 @@
 		9F6E1B07191E88D200FB192C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F6E1B49191E945E00FB192C /* QuartzCore.framework */,
+				9F6E1B46191E93DB00FB192C /* CoreImage.framework */,
 				9F6E1B08191E88D200FB192C /* Foundation.framework */,
 				9F6E1B0A191E88D200FB192C /* CoreGraphics.framework */,
 				9F6E1B0C191E88D200FB192C /* UIKit.framework */,
@@ -109,17 +117,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9F6E1B0E191E88D200FB192C /* ASBlurBackgroundViewController */ = {
+		9F6E1B0E191E88D200FB192C /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				9F6E1B17191E88D200FB192C /* ASAppDelegate.h */,
 				9F6E1B18191E88D200FB192C /* ASAppDelegate.m */,
-				9F6E1B1A191E88D200FB192C /* Main.storyboard */,
-				9F6E1B1D191E88D200FB192C /* ASViewController.h */,
-				9F6E1B1E191E88D200FB192C /* ASViewController.m */,
 				9F6E1B20191E88D200FB192C /* Images.xcassets */,
 				9F6E1B0F191E88D200FB192C /* Supporting Files */,
+				9F6E1B3D191E898100FB192C /* ASExampleViewController.h */,
+				9F6E1B3E191E898100FB192C /* ASExampleViewController.m */,
+				9F6E1B3F191E898100FB192C /* ASExampleViewController.xib */,
 			);
+			name = Example;
 			path = ASBlurBackgroundViewController;
 			sourceTree = "<group>";
 		};
@@ -150,6 +159,15 @@
 				9F6E1B30191E88D200FB192C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F6E1B42191E8BBC00FB192C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				9F6E1B43191E8BBC00FB192C /* ASBlurBackgroundViewController.h */,
+				9F6E1B44191E8BBC00FB192C /* ASBlurBackgroundViewController.m */,
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +249,7 @@
 			files = (
 				9F6E1B21191E88D200FB192C /* Images.xcassets in Resources */,
 				9F6E1B13191E88D200FB192C /* InfoPlist.strings in Resources */,
-				9F6E1B1C191E88D200FB192C /* Main.storyboard in Resources */,
+				9F6E1B41191E898100FB192C /* ASExampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6E1B19191E88D200FB192C /* ASAppDelegate.m in Sources */,
-				9F6E1B1F191E88D200FB192C /* ASViewController.m in Sources */,
 				9F6E1B15191E88D200FB192C /* main.m in Sources */,
+				9F6E1B45191E8BBC00FB192C /* ASBlurBackgroundViewController.m in Sources */,
+				9F6E1B40191E898100FB192C /* ASExampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +300,6 @@
 				9F6E1B12191E88D200FB192C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9F6E1B1A191E88D200FB192C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F6E1B1B191E88D200FB192C /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		9F6E1B30191E88D200FB192C /* InfoPlist.strings */ = {
@@ -457,6 +468,7 @@
 				9F6E1B39191E88D200FB192C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F6E1B3A191E88D200FB192C /* Build configuration list for PBXNativeTarget "ASBlurBackgroundViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +477,7 @@
 				9F6E1B3C191E88D200FB192C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

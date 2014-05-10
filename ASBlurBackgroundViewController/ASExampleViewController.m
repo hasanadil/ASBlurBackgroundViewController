@@ -10,29 +10,23 @@
 
 @interface ASExampleViewController ()
 
+@property (nonatomic, weak) IBOutlet UIImageView* bgImageView;
+
+-(IBAction) tapBlur:(id)sender;
+
 @end
 
 @implementation ASExampleViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(IBAction) tapBlur:(id)sender
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super blurView:_bgImageView withCompletion:^{
+        [UIView animateWithDuration:0.25f animations:^{
+            [_bgImageView setAlpha:0];
+        } completion:^(BOOL finished) {
+            [_bgImageView removeFromSuperview];
+        }];
+    }];
 }
 
 @end
