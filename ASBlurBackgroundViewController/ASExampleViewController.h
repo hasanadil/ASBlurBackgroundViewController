@@ -1,5 +1,5 @@
 //
-//  ASViewController.h
+//  ASExampleViewController.h
 //  ASBlurBackgroundViewController
 //
 //  Created by Hasan on 5/10/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ASViewController : UIViewController
+@interface ASExampleViewController : UIViewController
 
 @end
