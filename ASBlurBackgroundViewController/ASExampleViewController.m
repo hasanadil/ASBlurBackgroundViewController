@@ -20,11 +20,12 @@
 
 -(IBAction) tapBlur:(id)sender
 {
-    [super blurView:_bgImageView withCompletion:^{
+    [super blurView:self.view withCompletion:^{
         [UIView animateWithDuration:0.25f animations:^{
             [_bgImageView setAlpha:0];
         } completion:^(BOOL finished) {
             [_bgImageView removeFromSuperview];
+            [sender removeFromSuperview];
         }];
     }];
 }
