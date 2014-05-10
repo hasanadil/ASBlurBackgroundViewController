@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F6E1B09191E88D200FB192C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E1B08191E88D200FB192C /* Foundation.framework */; };
+		9F6E1B0B191E88D200FB192C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E1B0A191E88D200FB192C /* CoreGraphics.framework */; };
+		9F6E1B0D191E88D200FB192C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E1B0C191E88D200FB192C /* UIKit.framework */; };
+		9F6E1B13191E88D200FB192C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6E1B11191E88D200FB192C /* InfoPlist.strings */; };
+		9F6E1B15191E88D200FB192C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E1B14191E88D200FB192C /* main.m */; };
+		9F6E1B19191E88D200FB192C /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E1B18191E88D200FB192C /* ASAppDelegate.m */; };
+		9F6E1B1C191E88D200FB192C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6E1B1A191E88D200FB192C /* Main.storyboard */; };
+		9F6E1B1F191E88D200FB192C /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E1B1E191E88D200FB192C /* ASViewController.m */; };
+		9F6E1B21191E88D200FB192C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6E1B20191E88D200FB192C /* Images.xcassets */; };
+		9F6E1B28191E88D200FB192C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E1B27191E88D200FB192C /* XCTest.framework */; };
+		9F6E1B29191E88D200FB192C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E1B08191E88D200FB192C /* Foundation.framework */; };
+		9F6E1B2A191E88D200FB192C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6E1B0C191E88D200FB192C /* UIKit.framework */; };
+		9F6E1B32191E88D200FB192C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F6E1B30191E88D200FB192C /* InfoPlist.strings */; };
+		9F6E1B34191E88D200FB192C /* ASBlurBackgroundViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E1B33191E88D200FB192C /* ASBlurBackgroundViewControllerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F6E1B2B191E88D200FB192C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F6E1AFD191E88D200FB192C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F6E1B04191E88D200FB192C;
+			remoteInfo = ASBlurBackgroundViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F6E1B05191E88D200FB192C /* ASBlurBackgroundViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASBlurBackgroundViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6E1B08191E88D200FB192C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9F6E1B0A191E88D200FB192C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9F6E1B0C191E88D200FB192C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9F6E1B10191E88D200FB192C /* ASBlurBackgroundViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASBlurBackgroundViewController-Info.plist"; sourceTree = "<group>"; };
+		9F6E1B12191E88D200FB192C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F6E1B14191E88D200FB192C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9F6E1B16191E88D200FB192C /* ASBlurBackgroundViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASBlurBackgroundViewController-Prefix.pch"; sourceTree = "<group>"; };
+		9F6E1B17191E88D200FB192C /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
+		9F6E1B18191E88D200FB192C /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
+		9F6E1B1B191E88D200FB192C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F6E1B1D191E88D200FB192C /* ASViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASViewController.h; sourceTree = "<group>"; };
+		9F6E1B1E191E88D200FB192C /* ASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASViewController.m; sourceTree = "<group>"; };
+		9F6E1B20191E88D200FB192C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9F6E1B26191E88D200FB192C /* ASBlurBackgroundViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASBlurBackgroundViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F6E1B27191E88D200FB192C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9F6E1B2F191E88D200FB192C /* ASBlurBackgroundViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASBlurBackgroundViewControllerTests-Info.plist"; sourceTree = "<group>"; };
+		9F6E1B31191E88D200FB192C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F6E1B33191E88D200FB192C /* ASBlurBackgroundViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBlurBackgroundViewControllerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F6E1B02191E88D200FB192C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6E1B0B191E88D200FB192C /* CoreGraphics.framework in Frameworks */,
+				9F6E1B0D191E88D200FB192C /* UIKit.framework in Frameworks */,
+				9F6E1B09191E88D200FB192C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6E1B23191E88D200FB192C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6E1B28191E88D200FB192C /* XCTest.framework in Frameworks */,
+				9F6E1B2A191E88D200FB192C /* UIKit.framework in Frameworks */,
+				9F6E1B29191E88D200FB192C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F6E1AFC191E88D200FB192C = {
+			isa = PBXGroup;
+			children = (
+				9F6E1B0E191E88D200FB192C /* ASBlurBackgroundViewController */,
+				9F6E1B2D191E88D200FB192C /* ASBlurBackgroundViewControllerTests */,
+				9F6E1B07191E88D200FB192C /* Frameworks */,
+				9F6E1B06191E88D200FB192C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F6E1B06191E88D200FB192C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F6E1B05191E88D200FB192C /* ASBlurBackgroundViewController.app */,
+				9F6E1B26191E88D200FB192C /* ASBlurBackgroundViewControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F6E1B07191E88D200FB192C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F6E1B08191E88D200FB192C /* Foundation.framework */,
+				9F6E1B0A191E88D200FB192C /* CoreGraphics.framework */,
+				9F6E1B0C191E88D200FB192C /* UIKit.framework */,
+				9F6E1B27191E88D200FB192C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F6E1B0E191E88D200FB192C /* ASBlurBackgroundViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F6E1B17191E88D200FB192C /* ASAppDelegate.h */,
+				9F6E1B18191E88D200FB192C /* ASAppDelegate.m */,
+				9F6E1B1A191E88D200FB192C /* Main.storyboard */,
+				9F6E1B1D191E88D200FB192C /* ASViewController.h */,
+				9F6E1B1E191E88D200FB192C /* ASViewController.m */,
+				9F6E1B20191E88D200FB192C /* Images.xcassets */,
+				9F6E1B0F191E88D200FB192C /* Supporting Files */,
+			);
+			path = ASBlurBackgroundViewController;
+			sourceTree = "<group>";
+		};
+		9F6E1B0F191E88D200FB192C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F6E1B10191E88D200FB192C /* ASBlurBackgroundViewController-Info.plist */,
+				9F6E1B11191E88D200FB192C /* InfoPlist.strings */,
+				9F6E1B14191E88D200FB192C /* main.m */,
+				9F6E1B16191E88D200FB192C /* ASBlurBackgroundViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F6E1B2D191E88D200FB192C /* ASBlurBackgroundViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F6E1B33191E88D200FB192C /* ASBlurBackgroundViewControllerTests.m */,
+				9F6E1B2E191E88D200FB192C /* Supporting Files */,
+			);
+			path = ASBlurBackgroundViewControllerTests;
+			sourceTree = "<group>";
+		};
+		9F6E1B2E191E88D200FB192C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F6E1B2F191E88D200FB192C /* ASBlurBackgroundViewControllerTests-Info.plist */,
+				9F6E1B30191E88D200FB192C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F6E1B04191E88D200FB192C /* ASBlurBackgroundViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F6E1B37191E88D200FB192C /* Build configuration list for PBXNativeTarget "ASBlurBackgroundViewController" */;
+			buildPhases = (
+				9F6E1B01191E88D200FB192C /* Sources */,
+				9F6E1B02191E88D200FB192C /* Frameworks */,
+				9F6E1B03191E88D200FB192C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASBlurBackgroundViewController;
+			productName = ASBlurBackgroundViewController;
+			productReference = 9F6E1B05191E88D200FB192C /* ASBlurBackgroundViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F6E1B25191E88D200FB192C /* ASBlurBackgroundViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F6E1B3A191E88D200FB192C /* Build configuration list for PBXNativeTarget "ASBlurBackgroundViewControllerTests" */;
+			buildPhases = (
+				9F6E1B22191E88D200FB192C /* Sources */,
+				9F6E1B23191E88D200FB192C /* Frameworks */,
+				9F6E1B24191E88D200FB192C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F6E1B2C191E88D200FB192C /* PBXTargetDependency */,
+			);
+			name = ASBlurBackgroundViewControllerTests;
+			productName = ASBlurBackgroundViewControllerTests;
+			productReference = 9F6E1B26191E88D200FB192C /* ASBlurBackgroundViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F6E1AFD191E88D200FB192C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = AssembleLabs;
+				TargetAttributes = {
+					9F6E1B25191E88D200FB192C = {
+						TestTargetID = 9F6E1B04191E88D200FB192C;
+					};
+				};
+			};
+			buildConfigurationList = 9F6E1B00191E88D200FB192C /* Build configuration list for PBXProject "ASBlurBackgroundViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F6E1AFC191E88D200FB192C;
+			productRefGroup = 9F6E1B06191E88D200FB192C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F6E1B04191E88D200FB192C /* ASBlurBackgroundViewController */,
+				9F6E1B25191E88D200FB192C /* ASBlurBackgroundViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F6E1B03191E88D200FB192C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6E1B21191E88D200FB192C /* Images.xcassets in Resources */,
+				9F6E1B13191E88D200FB192C /* InfoPlist.strings in Resources */,
+				9F6E1B1C191E88D200FB192C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6E1B24191E88D200FB192C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6E1B32191E88D200FB192C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F6E1B01191E88D200FB192C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6E1B19191E88D200FB192C /* ASAppDelegate.m in Sources */,
+				9F6E1B1F191E88D200FB192C /* ASViewController.m in Sources */,
+				9F6E1B15191E88D200FB192C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6E1B22191E88D200FB192C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6E1B34191E88D200FB192C /* ASBlurBackgroundViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F6E1B2C191E88D200FB192C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F6E1B04191E88D200FB192C /* ASBlurBackgroundViewController */;
+			targetProxy = 9F6E1B2B191E88D200FB192C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F6E1B11191E88D200FB192C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F6E1B12191E88D200FB192C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9F6E1B1A191E88D200FB192C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F6E1B1B191E88D200FB192C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F6E1B30191E88D200FB192C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F6E1B31191E88D200FB192C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F6E1B35191E88D200FB192C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9F6E1B36191E88D200FB192C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F6E1B38191E88D200FB192C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASBlurBackgroundViewController/ASBlurBackgroundViewController-Prefix.pch";
+				INFOPLIST_FILE = "ASBlurBackgroundViewController/ASBlurBackgroundViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9F6E1B39191E88D200FB192C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASBlurBackgroundViewController/ASBlurBackgroundViewController-Prefix.pch";
+				INFOPLIST_FILE = "ASBlurBackgroundViewController/ASBlurBackgroundViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9F6E1B3B191E88D200FB192C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ASBlurBackgroundViewController.app/ASBlurBackgroundViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASBlurBackgroundViewController/ASBlurBackgroundViewController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ASBlurBackgroundViewControllerTests/ASBlurBackgroundViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9F6E1B3C191E88D200FB192C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ASBlurBackgroundViewController.app/ASBlurBackgroundViewController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ASBlurBackgroundViewController/ASBlurBackgroundViewController-Prefix.pch";
+				INFOPLIST_FILE = "ASBlurBackgroundViewControllerTests/ASBlurBackgroundViewControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F6E1B00191E88D200FB192C /* Build configuration list for PBXProject "ASBlurBackgroundViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F6E1B35191E88D200FB192C /* Debug */,
+				9F6E1B36191E88D200FB192C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F6E1B37191E88D200FB192C /* Build configuration list for PBXNativeTarget "ASBlurBackgroundViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F6E1B38191E88D200FB192C /* Debug */,
+				9F6E1B39191E88D200FB192C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F6E1B3A191E88D200FB192C /* Build configuration list for PBXNativeTarget "ASBlurBackgroundViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F6E1B3B191E88D200FB192C /* Debug */,
+				9F6E1B3C191E88D200FB192C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F6E1AFD191E88D200FB192C /* Project object */;
+}
